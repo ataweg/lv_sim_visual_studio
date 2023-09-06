@@ -16,7 +16,7 @@
   <Import Project="Mile.Project.Windows.Legacy\Mile.Project.Cpp.props" />
   <Import Project="freetype.props" />
   <PropertyGroup>
-    <IncludePath>$(MSBuildThisFileDirectory);$(IncludePath)</IncludePath>
+    <IncludePath>$(MSBuildThisFileDirectory);$(MSBuildThisFileDirectory)\myProject\cJSON2\src\;$(MSBuildThisFileDirectory)\myProject\myAddons\;$(MSBuildThisFileDirectory)\myProject\main\;$(MSBuildThisFileDirectory)\myProject\components_ws\ws_fonts\include\;$(MSBuildThisFileDirectory)\myProject\components_ws\ws_owm\include\;$(MSBuildThisFileDirectory)\myProject\components_ws\ws_panels\include\;$(MSBuildThisFileDirectory)\myProject\components_ws\ws_views\include\;$(MSBuildThisFileDirectory)\lvgl;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
@@ -270,6 +270,45 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mile.Project.Properties.h" />
+    <ClInclude Include="myProject\cJSON2\src\cJSON2.h" />
+    <ClInclude Include="myProject\cJSON2\src\cJSON2_internal.h" />
+    <ClInclude Include="myProject\cJSON2\src\cJSON2_parse.h" />
+    <ClInclude Include="myProject\cJSON2\src\cJSON2_stream.h" />
+    <ClInclude Include="myProject\cJSON2\src\name_pool.h" />
+    <ClInclude Include="myProject\components_ws\ws_fonts\include\font_owicons.h" />
+    <ClInclude Include="myProject\components_ws\ws_fonts\include\font_weathericons.h" />
+    <ClInclude Include="myProject\components_ws\ws_owm\include\owmForecast.h" />
+    <ClInclude Include="myProject\components_ws\ws_owm\include\owmIcon.h" />
+    <ClInclude Include="myProject\components_ws\ws_owm\include\owmJson.h" />
+    <ClInclude Include="myProject\components_ws\ws_owm\include\owmToken.h" />
+    <ClInclude Include="myProject\components_ws\ws_owm\include\owmWeather.h" />
+    <ClInclude Include="myProject\components_ws\ws_panels\include\ChartData.h" />
+    <ClInclude Include="myProject\components_ws\ws_panels\include\ChartPanel.h" />
+    <ClInclude Include="myProject\components_ws\ws_panels\include\ForecastPanel.h" />
+    <ClInclude Include="myProject\components_ws\ws_panels\include\HumidityPanel.h" />
+    <ClInclude Include="myProject\components_ws\ws_panels\include\LabelPanel.h" />
+    <ClInclude Include="myProject\components_ws\ws_panels\include\Panel.h" />
+    <ClInclude Include="myProject\components_ws\ws_panels\include\PressurePanel.h" />
+    <ClInclude Include="myProject\components_ws\ws_panels\include\SelectPanel.h" />
+    <ClInclude Include="myProject\components_ws\ws_panels\include\TemperaturePanel.h" />
+    <ClInclude Include="myProject\components_ws\ws_views\include\ws_gui.h" />
+    <ClInclude Include="myProject\components_ws\ws_views\include\ws_menu.h" />
+    <ClInclude Include="myProject\components_ws\ws_views\include\ws_setup.h" />
+    <ClInclude Include="myProject\components_ws\ws_views\include\ws_styles.h" />
+    <ClInclude Include="myProject\components_ws\ws_views\include\ws_theme.h" />
+    <ClInclude Include="myProject\components_ws\ws_views\include\ws_view.h" />
+    <ClInclude Include="myProject\components_ws\ws_views\include\ws_view_chart.h" />
+    <ClInclude Include="myProject\components_ws\ws_views\include\ws_view_config.h" />
+    <ClInclude Include="myProject\components_ws\ws_views\include\ws_view_forecast.h" />
+    <ClInclude Include="myProject\components_ws\ws_views\include\ws_view_info.h" />
+    <ClInclude Include="myProject\components_ws\ws_views\include\ws_view_main.h" />
+    <ClInclude Include="myProject\components_ws\ws_views\include\ws_view_sensors.h" />
+    <ClInclude Include="myProject\components_ws\ws_views\include\ws_view_system.h" />
+    <ClInclude Include="myProject\components_ws\ws_views\include\ws_view_welcome.h" />
+    <ClInclude Include="myProject\main\app_config.h" />
+    <ClInclude Include="myProject\myAddons\aweDBG.h" />
+    <ClInclude Include="myProject\myAddons\date_time.h" />
+    <ClInclude Include="myProject\myAddons\esp_log.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -721,6 +760,59 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)lv_drivers\win32drv\win32drv.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)lv_drivers\win_drv.c" />
     <ClCompile Include="LVGL.Simulator.cpp" />
+    <ClCompile Include="lvgl\examples\widgets\keyboard\font_montserrat_ger_14.c" />
+    <ClCompile Include="lvgl\examples\widgets\keyboard\font_montserrat_ger_16.c" />
+    <ClCompile Include="lvgl\examples\widgets\keyboard\lv_example_keyboard_2.c" />
+    <ClCompile Include="lvgl\examples\widgets\keyboard\lv_example_keyboard_3.c" />
+    <ClCompile Include="myProject\cJSON2\src\cJSON2.c" />
+    <ClCompile Include="myProject\cJSON2\src\cJSON2_parse.c" />
+    <ClCompile Include="myProject\cJSON2\src\cJSON2_stream.c" />
+    <ClCompile Include="myProject\cJSON2\src\name_pool.c" />
+    <ClCompile Include="myProject\components_ws\ws_fonts\font_7segment_22.c" />
+    <ClCompile Include="myProject\components_ws\ws_fonts\font_7segment_36.c" />
+    <ClCompile Include="myProject\components_ws\ws_fonts\font_7segment_72.c" />
+    <ClCompile Include="myProject\components_ws\ws_fonts\font_montserrat_10.c" />
+    <ClCompile Include="myProject\components_ws\ws_fonts\font_montserrat_16.c" />
+    <ClCompile Include="myProject\components_ws\ws_fonts\font_montserrat_22.c" />
+    <ClCompile Include="myProject\components_ws\ws_fonts\font_owicons_36.c" />
+    <ClCompile Include="myProject\components_ws\ws_fonts\font_owicons_72.c" />
+    <ClCompile Include="myProject\components_ws\ws_fonts\font_symbols_32.c" />
+    <ClCompile Include="myProject\components_ws\ws_fonts\font_weathericons_36.c" />
+    <ClCompile Include="myProject\components_ws\ws_fonts\font_weathericons_72.c" />
+    <ClCompile Include="myProject\components_ws\ws_owm\owmForecast.c" />
+    <ClCompile Include="myProject\components_ws\ws_owm\owmIcon.c" />
+    <ClCompile Include="myProject\components_ws\ws_owm\owmPrintJson.c" />
+    <ClCompile Include="myProject\components_ws\ws_owm\owmToken.c" />
+    <ClCompile Include="myProject\components_ws\ws_owm\owmWeather.c" />
+    <ClCompile Include="myProject\components_ws\ws_owm\owm_data_ettlingen_2021-06-21_json.c" />
+    <ClCompile Include="myProject\components_ws\ws_panels\ChartData.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_panels\ChartPanel.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_panels\ForecastPanel.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_panels\HumidityPanel.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_panels\LabelPanel.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_panels\Panel.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_panels\PressurePanel.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_panels\SelectPanel.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_panels\TemperaturePanel.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_views\ws_gui.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_views\ws_menu.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_views\ws_setup.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_views\ws_styles.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_views\ws_theme.c" />
+    <ClCompile Include="myProject\components_ws\ws_views\ws_view.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_views\ws_view_chart.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_views\ws_view_config.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_views\ws_view_forecast.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_views\ws_view_info.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_views\ws_view_main.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_views\ws_view_sensors.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_views\ws_view_system.cpp" />
+    <ClCompile Include="myProject\components_ws\ws_views\ws_view_welcome.cpp" />
+    <ClCompile Include="myProject\main\Blue_Sky.c" />
+    <ClCompile Include="myProject\main\Clounds_Bright.c" />
+    <ClCompile Include="myProject\main\Demo_ws_gui.cpp" />
+    <ClCompile Include="myProject\myAddons\date_time.c" />
+    <ClCompile Include="myProject\myAddons\sys_timestamp.c" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LVGL.Simulator.rc" />
