@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file lv_conf.h
  * Configuration file for v8.3.4
  */
@@ -17,7 +17,7 @@
    #ifndef LV_CONF_H
       #define LV_CONF_H
 
-      #define BUILD_MY_PROJECT           1
+      #define BUILD_MY_PROJECT           0
 
       #define LV_USE_DEV_VERSION
 
@@ -404,21 +404,23 @@
       #define LV_FONT_MONTSERRAT_10    0
       #define LV_FONT_MONTSERRAT_12    0
       #if BUILD_MY_PROJECT
-      #define LV_FONT_MONTSERRAT_14    0
-      #define LV_FONT_MONTSERRAT_16    0
-      #define LV_FONT_MONTSERRAT_18    0
+         #define LV_FONT_MONTSERRAT_14    0
+         #define LV_FONT_MONTSERRAT_16    0
+         #define LV_FONT_MONTSERRAT_18    0
+         #define LV_FONT_MONTSERRAT_22    0
+         #define LV_FONT_MONTSERRAT_32    0
       #else
          #define LV_FONT_MONTSERRAT_14    1
          #define LV_FONT_MONTSERRAT_16    1
          #define LV_FONT_MONTSERRAT_18    1
+         #define LV_FONT_MONTSERRAT_22    1
+         #define LV_FONT_MONTSERRAT_32    1
       #endif
       #define LV_FONT_MONTSERRAT_20    0
-      #define LV_FONT_MONTSERRAT_22    0
       #define LV_FONT_MONTSERRAT_24    0
       #define LV_FONT_MONTSERRAT_26    0
       #define LV_FONT_MONTSERRAT_28    0
       #define LV_FONT_MONTSERRAT_30    0
-      #define LV_FONT_MONTSERRAT_32    0
       #define LV_FONT_MONTSERRAT_34    0
       #define LV_FONT_MONTSERRAT_36    0
       #define LV_FONT_MONTSERRAT_38    0
@@ -529,7 +531,7 @@
 
       /*Documentation of the widgets: https://docs.lvgl.io/latest/en/html/widgets/index.html*/
 
-      #define LV_USE_ANIMIMG    1
+      #define LV_USE_ANIMIMG      1
 
       #define LV_USE_ARC          1
 
@@ -539,7 +541,7 @@
 
       #define LV_USE_BTNMATRIX    1
 
-      #define LV_USE_CALENDAR   1
+      #define LV_USE_CALENDAR     1
       #if LV_USE_CALENDAR
          #define LV_CALENDAR_WEEK_STARTS_MONDAY 0
          #if LV_CALENDAR_WEEK_STARTS_MONDAY
@@ -549,7 +551,7 @@
          #endif
 
          #define LV_CALENDAR_DEFAULT_MONTH_NAMES {"January", "February", "March",  "April", "May",  "June", "July", "August", "September", "October", "November", "December"}
-         #define LV_USE_CALENDAR_HEADER_ARROW 1
+         #define LV_USE_CALENDAR_HEADER_ARROW    1
          #define LV_USE_CALENDAR_HEADER_DROPDOWN 1
       #endif  /*LV_USE_CALENDAR*/
 
@@ -559,13 +561,13 @@
 
       #define LV_USE_CHECKBOX     1
 
-      #define LV_USE_COLORWHEEL   0
+      #define LV_USE_COLORWHEEL   1
 
       #define LV_USE_DROPDOWN     1   /*Requires: lv_label*/
 
       #define LV_USE_IMG          1   /*Requires: lv_label*/
 
-      #define LV_USE_IMGBTN       0
+      #define LV_USE_IMGBTN       1
 
       #define LV_USE_KEYBOARD     1
 
@@ -575,19 +577,19 @@
          #define LV_LABEL_LONG_TXT_HINT    1   /*Store some extra info in labels to speed up drawing of very long texts*/
       #endif
 
-      #define LV_USE_LED        1
+      #define LV_USE_LED          1
 
       #define LV_USE_LINE         1
 
-      #define LV_USE_LIST         0
+      #define LV_USE_LIST         1
 
       #define LV_USE_METER        1
 
-      #define LV_USE_MSGBOX       0
+      #define LV_USE_MSGBOX       1
 
       #define LV_USE_SLIDER       1    /*Requires: lv_bar*/
 
-      #define LV_USE_SPAN         0
+      #define LV_USE_SPAN         1
       #if LV_USE_SPAN
          /*A line text can contain maximum num of span descriptor */
          #define LV_SPAN_SNIPPET_STACK_SIZE   64
