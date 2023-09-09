@@ -492,9 +492,13 @@ int main()
 #if BUILD_MY_PROJECT
       Demo_ws_loop();
 #endif
-
+#if 0
+      uint32_t time_till_next = lv_timer_handler();
+      Sleep( time_till_next );
+#else
       lv_task_handler();
       Sleep( 1 );
+#endif
    }
 
    return 0;

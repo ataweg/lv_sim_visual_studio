@@ -697,10 +697,10 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)lv_drivers\win_drv.h">
       <Filter>lv_drivers</Filter>
     </ClInclude>
-    <ClInclude Include="lv_conf.h" />
     <ClInclude Include="lv_drv_conf.h" />
     <ClInclude Include="Mile.Project.Properties.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="lv_conf.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)lvgl\demos\benchmark\assets\img_benchmark_cogwheel_alpha16.c">
