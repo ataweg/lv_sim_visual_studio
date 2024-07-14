@@ -1543,6 +1543,9 @@
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\index.rst" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\lv_example_keyboard_1.c" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\lv_example_keyboard_2.c" />
+    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\lv_example_keyboard_3.c" />
+    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\font_montserrat_ger_14.c" />
+    <none Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\font_montserrat_ger_16.c" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\label\index.rst" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\label\lv_example_label_1.c" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\label\lv_example_label_2.c" />

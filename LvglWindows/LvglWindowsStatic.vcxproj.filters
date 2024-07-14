@@ -5515,6 +5515,14 @@
     </None>
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\lv_example_keyboard_2.c">
       <Filter>lvgl\examples\widgets\keyboard</Filter>
+    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\lv_example_keyboard_3.c">
+      <Filter>lvgl\examples\widgets\keyboard</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\font_montserrat_ger_14.c">
+      <Filter>lvgl\examples\widgets\keyboard</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\font_montserrat_ger_16.c">
+      <Filter>lvgl\examples\widgets\keyboard</Filter>
     </None>
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\label\index.rst">
       <Filter>lvgl\examples\widgets\label</Filter>

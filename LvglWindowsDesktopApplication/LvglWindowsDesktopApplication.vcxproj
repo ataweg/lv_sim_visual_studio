@@ -15,6 +15,7 @@
     <MileProjectProductName>LVGL</MileProjectProductName>
     <MileProjectVersion>9.0.0.0</MileProjectVersion>
     <MileProjectVersionTag Condition="false">Alpha 1</MileProjectVersionTag>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="..\Mile.Project.Windows\Mile.Project.Platform.x86.props" />
   <Import Project="..\Mile.Project.Windows\Mile.Project.Platform.x64.props" />
@@ -943,8 +944,6 @@
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\win\index.rst" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\idf_component.yml" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\Kconfig" />
-    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\library.json" />
-    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\library.properties" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\LICENCE.txt" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\lvgl.mk" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\lvgl.pc.in" />
@@ -2081,8 +2080,6 @@
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\src\test_libs\rnd_unicodes\rnd_unicodes\CMakeLists.txt" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\src\test_libs\rnd_unicodes\rnd_unicodes\LICENSE" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\src\test_libs\rnd_unicodes\rnd_unicodes\README.md" />
-    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\src\test_libs\rnd_unicodes\rnd_unicodes\src\library.c" />
-    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\src\test_libs\rnd_unicodes\rnd_unicodes\src\library.h" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\test_images\pngs\test.png" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\test_images\stride_align1\LZ4\test_A1.bin" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\test_images\stride_align1\LZ4\test_A1_LZ4_align1.c" />
@@ -2541,6 +2538,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\image\lv_example_image_4.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\lv_example_keyboard_1.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\lv_example_keyboard_2.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\lv_example_keyboard_3.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\font_montserrat_ger_14.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\font_montserrat_ger_16.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\label\lv_example_label_1.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\label\lv_example_label_2.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\label\lv_example_label_3.c" />

@@ -2719,12 +2719,6 @@
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\Kconfig">
       <Filter>lvgl</Filter>
     </None>
-    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\library.json">
-      <Filter>lvgl</Filter>
-    </None>
-    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\library.properties">
-      <Filter>lvgl</Filter>
-    </None>
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\LICENCE.txt">
       <Filter>lvgl</Filter>
     </None>
@@ -6133,12 +6127,6 @@
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\src\test_libs\rnd_unicodes\rnd_unicodes\README.md">
       <Filter>lvgl\tests\src\test_libs\rnd_unicodes\rnd_unicodes</Filter>
     </None>
-    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\src\test_libs\rnd_unicodes\rnd_unicodes\src\library.c">
-      <Filter>lvgl\tests\src\test_libs\rnd_unicodes\rnd_unicodes\src</Filter>
-    </None>
-    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\src\test_libs\rnd_unicodes\rnd_unicodes\src\library.h">
-      <Filter>lvgl\tests\src\test_libs\rnd_unicodes\rnd_unicodes\src</Filter>
-    </None>
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\test_images\pngs\test.png">
       <Filter>lvgl\tests\test_images\pngs</Filter>
     </None>
@@ -7720,7 +7708,6 @@
       <UniqueIdentifier>{f514f744-494a-43ef-bac4-c1aa3033587c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Manifest Include="LvglWindowsDesktopApplication.manifest" />
   </ItemGroup>
@@ -8550,7 +8537,18 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\lv_example_keyboard_2.c">
       <Filter>lvgl\examples\widgets\keyboard</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\label\lv_example_label_1.c">
+   <ItemGroup>
+    <ClCompile Include="(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\lv_example_keyboard_3.c">
+      <Filter>lvgl\examples\widgets\keyboard</Filter>
+    </ClCompile>
+  </ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\font_montserrat_ger_14.c">
+      <Filter>lvgl\examples\widgets\keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\keyboard\font_montserrat_ger_16.c">
+      <Filter>lvgl\examples\widgets\keyboard</Filter>
+    </ClCompile>
+   <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\label\lv_example_label_1.c">
       <Filter>lvgl\examples\widgets\label</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\examples\widgets\label\lv_example_label_2.c">
