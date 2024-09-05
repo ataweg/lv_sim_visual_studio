@@ -115,20 +115,32 @@ int main()
    // ----------------------------------
 
    // lv_example_barcode_1();
+
    // lv_example_bmp_1();
+
    // lv_example_ffmpeg_1();
    // lv_example_ffmpeg_2();
+
    // lv_example_freetype_1();
+   // lv_example_freetype_2();
+
    // lv_example_gif_1();
+
    // lv_example_libjpeg_turbo_1();
+
    // lv_example_libpng_1();
+
    // lv_example_lodepng_1();
+
    // lv_example_qrcode_1();
+
    // lv_example_rlottie_1();
    // lv_example_rlottie_2();
+
    // lv_example_tiny_ttf_1();
    // lv_example_tiny_ttf_2();
    // lv_example_tiny_ttf_3();
+
    // lv_example_tjpgd_1();
 
    // ----------------------------------
@@ -138,18 +150,25 @@ int main()
    // lv_example_file_explorer_1();
    // lv_example_file_explorer_2();
    // lv_example_file_explorer_3();
+
    // lv_example_fragment_1();
    // lv_example_fragment_2();
+
    // lv_example_gridnav_1();
    // lv_example_gridnav_2();
    // lv_example_gridnav_3();
    // lv_example_gridnav_4();
+   // lv_example_gridnav_5();
+
    // lv_example_ime_pinyin_1();
    // lv_example_ime_pinyin_2();
+
    // lv_example_imgfont_1();
+
    // lv_example_monkey_1();
    // lv_example_monkey_2();
    // lv_example_monkey_3();
+
    // lv_example_observer_1();
    // lv_example_observer_2();
    // lv_example_observer_3();
@@ -157,6 +176,8 @@ int main()
    // lv_example_observer_5();
    // lv_example_observer_6();
    // lv_example_snapshot_1();
+
+   // lv_example_osal();
 
    // ----------------------------------
    // LVGL scroll examples
@@ -188,6 +209,9 @@ int main()
    // lv_example_style_13();
    // lv_example_style_14();
    // lv_example_style_15();
+   // lv_example_style_16();
+   // lv_example_style_17();
+   // lv_example_style_18();
 
    // ----------------------------------
    // LVGL widgets examples
@@ -215,6 +239,7 @@ int main()
    // lv_example_buttonmatrix_3();    // ok
 
    // lv_example_calendar_1();
+   // lv_example_calendar_2();
 
    // lv_example_canvas_1();
    // lv_example_canvas_2();
@@ -250,11 +275,12 @@ int main()
 
    // lv_example_keyboard_1();    // ok
    // lv_example_keyboard_2();    // ok
-   lv_example_keyboard_3();
+      lv_example_keyboard_3();    // ok
 
    // lv_example_label_1();
    // lv_example_label_2();       // ok
    // lv_example_label_3();
+   // lv_example_label_4();
    // lv_example_label_5();
 
    // lv_example_led_1();
@@ -264,6 +290,9 @@ int main()
    // lv_example_list_1();
    // lv_example_list_2();
 
+   // lv_example_lottie_1();
+   // lv_example_lottie_2();
+
    // lv_example_menu_1();
    // lv_example_menu_2();
    // lv_example_menu_3();
@@ -271,18 +300,22 @@ int main()
    // lv_example_menu_5();
 
    // lv_example_msgbox_1();
+   // lv_example_msgbox_2();
 
    // lv_example_obj_1();         // ok
    // lv_example_obj_2();         // ok
 
    // lv_example_roller_1();
    // lv_example_roller_2();      // ok
+   // lv_example_roller_3();
 
    // lv_example_scale_1();     // new, ok
    // lv_example_scale_2();     // new, ok
    // lv_example_scale_3();     // new, ok
    // lv_example_scale_4();     // new, ok
    // lv_example_scale_5();     // new, ok
+   // lv_example_scale_6();
+   // lv_example_scale_7();
 
    // lv_example_slider_1();      // issues, slider not shown
    // lv_example_slider_2();      // ok
