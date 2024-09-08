@@ -26,20 +26,9 @@
   <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.Default.props" />
   <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.props" />
   <Import Project="..\LvglPlatform\LvglWindowsIconResource\LvglWindowsIconResource.props" />
-  <Import Project="freetype.props" />
   <PropertyGroup>
     <IncludePath>$(MSBuildThisFileDirectory);$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\;$(MSBuildThisFileDirectory)..\LvglPlatform\;$(IncludePath)</IncludePath>
   </PropertyGroup>
-  <ItemDefinitionGroup>
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <TreatWarningAsError>false</TreatWarningAsError>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <PreprocessorDefinitions>LV_CONF_INCLUDE_SIMPLE;LV_LVGL_H_INCLUDE_SIMPLE;LV_USE_DEV_VERSION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <Optimization Condition="'$(Configuration)'=='Release'">MinSpace</Optimization>
-    </ClCompile>
-  </ItemDefinitionGroup>
-  <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.targets" />
   <ItemGroup>
     <ClInclude Include="..\LvglPlatform\lvgl\demos\benchmark\lv_demo_benchmark.h" />
     <ClInclude Include="..\LvglPlatform\lvgl\demos\flex_layout\lv_demo_flex_layout.h" />
@@ -1234,4 +1223,24 @@
     <ClCompile Include="..\LvglPlatform\lvgl\src\widgets\win\lv_win.c" />
     <ClCompile Include="LvglWindowsSimulator.cpp" />
   </ItemGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>LV_CONF_INCLUDE_SIMPLE;LV_LVGL_H_INCLUDE_SIMPLE;LV_USE_DEV_VERSION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)'=='Release'">MinSpace</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.targets" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>LV_CONF_INCLUDE_SIMPLE;LV_LVGL_H_INCLUDE_SIMPLE;LV_USE_DEV_VERSION;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization Condition="'$(Configuration)'=='Release'">MinSpace</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.targets" />
 </Project>
