@@ -253,6 +253,12 @@
     <ClInclude Include="..\LvglPlatform\lvgl\src\display\lv_display_private.h">
       <Filter>_LvglPlatform\lvgl\src\display</Filter>
     </ClInclude>
+    <ClInclude Include="..\LvglPlatform\lvgl\src\draw\dma2d\lv_draw_dma2d.h">
+      <Filter>_LvglPlatform\lvgl\src\draw\dma2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LvglPlatform\lvgl\src\draw\dma2d\lv_draw_dma2d_private.h">
+      <Filter>_LvglPlatform\lvgl\src\draw\dma2d</Filter>
+    </ClInclude>
     <ClInclude Include="..\LvglPlatform\lvgl\src\draw\lv_draw.h">
       <Filter>_LvglPlatform\lvgl\src\draw</Filter>
     </ClInclude>
@@ -1902,16 +1908,19 @@
     <ClCompile Include="..\LvglPlatform\lvgl\examples\assets\img_star.c">
       <Filter>_LvglPlatform\lvgl\examples\assets</Filter>
     </ClCompile>
-    <ClCompile Include="..\LvglPlatform\lvgl\examples\event\lv_example_event_1.c">
+    <ClCompile Include="..\LvglPlatform\lvgl\examples\event\lv_example_event_bubble.c">
       <Filter>_LvglPlatform\lvgl\examples\event</Filter>
     </ClCompile>
-    <ClCompile Include="..\LvglPlatform\lvgl\examples\event\lv_example_event_2.c">
+    <ClCompile Include="..\LvglPlatform\lvgl\examples\event\lv_example_event_button.c">
       <Filter>_LvglPlatform\lvgl\examples\event</Filter>
     </ClCompile>
-    <ClCompile Include="..\LvglPlatform\lvgl\examples\event\lv_example_event_3.c">
+    <ClCompile Include="..\LvglPlatform\lvgl\examples\event\lv_example_event_click.c">
       <Filter>_LvglPlatform\lvgl\examples\event</Filter>
     </ClCompile>
-    <ClCompile Include="..\LvglPlatform\lvgl\examples\event\lv_example_event_4.c">
+    <ClCompile Include="..\LvglPlatform\lvgl\examples\event\lv_example_event_draw.c">
+      <Filter>_LvglPlatform\lvgl\examples\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\lvgl\examples\event\lv_example_event_streak.c">
       <Filter>_LvglPlatform\lvgl\examples\event</Filter>
     </ClCompile>
     <ClCompile Include="..\LvglPlatform\lvgl\examples\get_started\lv_example_get_started_1.c">
@@ -2448,6 +2457,9 @@
     <ClCompile Include="..\LvglPlatform\lvgl\examples\widgets\switch\lv_example_switch_1.c">
       <Filter>_LvglPlatform\lvgl\examples\widgets\switch</Filter>
     </ClCompile>
+    <ClCompile Include="..\LvglPlatform\lvgl\examples\widgets\switch\lv_example_switch_2.c">
+      <Filter>_LvglPlatform\lvgl\examples\widgets\switch</Filter>
+    </ClCompile>
     <ClCompile Include="..\LvglPlatform\lvgl\examples\widgets\table\lv_example_table_1.c">
       <Filter>_LvglPlatform\lvgl\examples\widgets\table</Filter>
     </ClCompile>
@@ -2516,6 +2528,15 @@
     </ClCompile>
     <ClCompile Include="..\LvglPlatform\lvgl\src\display\lv_display.c">
       <Filter>_LvglPlatform\lvgl\src\display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\lvgl\src\draw\dma2d\lv_draw_dma2d.c">
+      <Filter>_LvglPlatform\lvgl\src\draw\dma2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\lvgl\src\draw\dma2d\lv_draw_dma2d_fill.c">
+      <Filter>_LvglPlatform\lvgl\src\draw\dma2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LvglPlatform\lvgl\src\draw\dma2d\lv_draw_dma2d_img.c">
+      <Filter>_LvglPlatform\lvgl\src\draw\dma2d</Filter>
     </ClCompile>
     <ClCompile Include="..\LvglPlatform\lvgl\src\draw\lv_draw.c">
       <Filter>_LvglPlatform\lvgl\src\draw</Filter>
@@ -3576,676 +3597,679 @@
   </ItemGroup>
   <ItemGroup>
     <Filter Include="_LvglPlatform">
-      <UniqueIdentifier>a4b4a952-55fa-41ca-b405-b21738a5c59f</UniqueIdentifier>
+      <UniqueIdentifier>813fa68c-f299-41b6-a25a-c1caca027665</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl">
-      <UniqueIdentifier>e5e699c0-81d9-48fa-915f-726fc920f4bb</UniqueIdentifier>
+      <UniqueIdentifier>10cfcbbb-5b5b-4d01-9270-adb7431b7353</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos">
-      <UniqueIdentifier>6b663d32-da52-4a0c-92b3-8169a3858419</UniqueIdentifier>
+      <UniqueIdentifier>8a34e9e9-5dcf-46f0-97d6-bcbe74130160</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\benchmark">
-      <UniqueIdentifier>c5d30ac8-0534-434d-b95d-489fb1252a01</UniqueIdentifier>
+      <UniqueIdentifier>125af924-df4c-45de-8912-69bfd1aa447b</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\benchmark\assets">
-      <UniqueIdentifier>d5296b59-994c-4976-a94f-9a482c38d5ff</UniqueIdentifier>
+      <UniqueIdentifier>4030b3ee-2697-488d-aca7-2d9c34f3a5b7</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\flex_layout">
-      <UniqueIdentifier>d7f3feae-8a62-469b-8d63-7457a3bd19d5</UniqueIdentifier>
+      <UniqueIdentifier>f4954084-a845-481e-872e-f0e49323b760</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\keypad_encoder">
-      <UniqueIdentifier>c624bfdc-61e8-4b64-82e1-460385318782</UniqueIdentifier>
+      <UniqueIdentifier>1d8d93ad-be76-4524-b46c-258e1f655f18</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\multilang">
-      <UniqueIdentifier>fa2e8cb9-486c-40d5-a707-158abb80abfd</UniqueIdentifier>
+      <UniqueIdentifier>cea84a27-361d-43d2-a7cb-d2965d10ea17</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\multilang\assets">
-      <UniqueIdentifier>46db5946-c5dc-42fa-ab50-d6e52f9bcbd5</UniqueIdentifier>
+      <UniqueIdentifier>37392730-2f94-4a0d-9686-0e761423320b</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\multilang\assets\avatars">
-      <UniqueIdentifier>b85b470f-3845-4c68-8f9a-c06de77f4446</UniqueIdentifier>
+      <UniqueIdentifier>841a6561-08a2-4d6b-95ab-9aac3ce34bba</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\multilang\assets\emojis">
-      <UniqueIdentifier>2f810469-ef82-4990-bd3c-64ba1c1c3dd5</UniqueIdentifier>
+      <UniqueIdentifier>53a10d2c-ca88-4cdc-8c91-1d53b7e5bcb4</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\multilang\assets\fonts">
-      <UniqueIdentifier>6497bc5e-6bd4-4943-a6be-417767f467cb</UniqueIdentifier>
+      <UniqueIdentifier>171f4bd5-24e7-49fc-a27b-f263a40e6d8d</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\music">
-      <UniqueIdentifier>5be26197-8930-49bf-9ade-c8a3791bc535</UniqueIdentifier>
+      <UniqueIdentifier>9ea4aeb7-f385-4ce6-a644-b664f7667c0a</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\music\assets">
-      <UniqueIdentifier>89375849-7129-45ea-9a38-dea18da12c7a</UniqueIdentifier>
+      <UniqueIdentifier>d6499f31-bcf8-4e44-847f-0fc074366ec3</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\render">
-      <UniqueIdentifier>3043b227-f10d-4834-bd9f-eda6a2f9cde9</UniqueIdentifier>
+      <UniqueIdentifier>c54458ba-cdde-432a-b655-c273280b185d</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\render\assets">
-      <UniqueIdentifier>ba039e0f-70a1-4656-acbc-df5088896192</UniqueIdentifier>
+      <UniqueIdentifier>3b1c4556-4801-4b4a-ac55-904e75241911</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\scroll">
-      <UniqueIdentifier>bc52de44-8796-41f3-8153-ef4e2fe77e80</UniqueIdentifier>
+      <UniqueIdentifier>4111790a-1c88-461a-8a7c-6251afa2ab29</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\stress">
-      <UniqueIdentifier>765dd572-863b-4a20-b2fa-611a6f365f1f</UniqueIdentifier>
+      <UniqueIdentifier>c0cc00f2-a20f-4830-a36f-bd19ef0139f8</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\transform">
-      <UniqueIdentifier>0cdcc74f-fbc7-4e26-8fb2-51bb29d1fece</UniqueIdentifier>
+      <UniqueIdentifier>0e363385-d4d0-424c-9fe7-2b4abcc0d5bb</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\transform\assets">
-      <UniqueIdentifier>4ef7ebf0-98c7-44c8-b5be-c71a52e24a7c</UniqueIdentifier>
+      <UniqueIdentifier>4e85a176-6ee5-4125-b9f4-130959915540</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\vector_graphic">
-      <UniqueIdentifier>05cc3fa4-46d7-4bc6-bc2c-bdc58c2cac18</UniqueIdentifier>
+      <UniqueIdentifier>a65ab7a7-7135-44cf-8fe4-5cdbda357704</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\vector_graphic\assets">
-      <UniqueIdentifier>989c81af-93b4-451c-b937-fbfb052d6456</UniqueIdentifier>
+      <UniqueIdentifier>b3a6e79f-a61d-470d-a840-b2230d669b7c</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\widgets">
-      <UniqueIdentifier>509a4842-27b4-4c6f-a4c6-16ffae315e78</UniqueIdentifier>
+      <UniqueIdentifier>fb3e8fbd-edbd-491d-8b0a-39e234fd3d79</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\demos\widgets\assets">
-      <UniqueIdentifier>258689d4-741a-43ab-a53e-93e3c55f52fb</UniqueIdentifier>
+      <UniqueIdentifier>27fbf46e-1012-4209-a14d-9989b4ed19bb</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\env_support">
-      <UniqueIdentifier>ca396a1a-7559-4fae-a6bc-d4ccc1e2c3c0</UniqueIdentifier>
+      <UniqueIdentifier>900be49a-fbe0-4e7d-b132-3f152145def3</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\env_support\cmsis-pack">
-      <UniqueIdentifier>2d7b58e9-cc52-45c3-8de6-21f49c38ebff</UniqueIdentifier>
+      <UniqueIdentifier>9fc9de8f-0fbb-4c6c-a942-0e1813a49f43</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\env_support\pikascript">
-      <UniqueIdentifier>886810db-953c-4028-a68e-440545e36ec9</UniqueIdentifier>
+      <UniqueIdentifier>d72cff83-11db-4fb8-8922-64c5a362d125</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\env_support\rt-thread">
-      <UniqueIdentifier>2593a292-c8c4-4f43-9d4f-11ea1397b86e</UniqueIdentifier>
+      <UniqueIdentifier>d4554425-2e7a-4c79-9d21-acf8e6d75382</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\env_support\rt-thread\squareline">
-      <UniqueIdentifier>179ad555-4f6c-4f7d-b500-c3c3afd25b85</UniqueIdentifier>
+      <UniqueIdentifier>304ca08d-d5fb-4275-ae5d-29b801794ff7</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\env_support\rt-thread\squareline\ui">
-      <UniqueIdentifier>ce16584c-e9b0-4c00-a7bf-d744d02ed114</UniqueIdentifier>
+      <UniqueIdentifier>95fe2753-0732-45b7-ad56-79fee65f1381</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\env_support\rt-thread\squareline\ui\lvgl">
-      <UniqueIdentifier>31a281eb-5e13-4b49-a4ff-cb15743cf66a</UniqueIdentifier>
+      <UniqueIdentifier>378a45af-ae4e-4def-b191-ac4b92c35af1</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples">
-      <UniqueIdentifier>628b8ecf-55b4-4bbb-bc1d-450c5b4c2e39</UniqueIdentifier>
+      <UniqueIdentifier>53a1e0b6-2269-44e7-9189-6f8d3463d388</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\anim">
-      <UniqueIdentifier>8d433696-e341-4d1f-ad1d-fb832e04f4c7</UniqueIdentifier>
+      <UniqueIdentifier>54e6d88d-2417-4b26-b987-478d981d7ac2</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\assets">
-      <UniqueIdentifier>3ba991cf-c418-4790-9901-3642862d5d89</UniqueIdentifier>
+      <UniqueIdentifier>36af9008-15d3-4ac9-81fd-9eb774a77a41</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\assets\emoji">
-      <UniqueIdentifier>cd1e41af-95b4-4908-8c07-0a104fb93951</UniqueIdentifier>
+      <UniqueIdentifier>2f696666-2ec4-450c-861c-5b3bc2991677</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\event">
-      <UniqueIdentifier>64c93994-5c9a-4b89-b314-b9ea7cb74e79</UniqueIdentifier>
+      <UniqueIdentifier>98a8233e-d32c-48e8-b3d4-946a7fe40100</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\get_started">
-      <UniqueIdentifier>2281b1e3-10de-4ed6-8cf5-ae681ad164ed</UniqueIdentifier>
+      <UniqueIdentifier>74d940a5-e8d8-422f-b56c-bdfabe980da0</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\layouts">
-      <UniqueIdentifier>c131123c-10a7-4757-a2b6-568a9a096a8e</UniqueIdentifier>
+      <UniqueIdentifier>72e1d5cf-a9e2-42f9-80bc-2e4388b8fe97</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\layouts\flex">
-      <UniqueIdentifier>e00cee9a-773e-459f-8a12-c5246200ddf4</UniqueIdentifier>
+      <UniqueIdentifier>bd13fb15-a3c8-4353-8978-28db86e82995</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\layouts\grid">
-      <UniqueIdentifier>b33d0721-5dbf-499f-a0ee-8ebc286f1ead</UniqueIdentifier>
+      <UniqueIdentifier>ecc8fe7b-818d-4834-8eed-fbfb93910f04</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\libs">
-      <UniqueIdentifier>32e477b4-9fe7-4b50-9a45-d10f686f5885</UniqueIdentifier>
+      <UniqueIdentifier>e04dd055-d082-4957-84db-89383a3d1a90</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\libs\barcode">
-      <UniqueIdentifier>b69c0a2d-09bb-4a80-a7bd-6038a923e7a8</UniqueIdentifier>
+      <UniqueIdentifier>d45d364e-4b1e-4438-a9a0-7867915ffdb2</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\libs\bmp">
-      <UniqueIdentifier>f5649577-a778-4fd7-839a-246a906785c6</UniqueIdentifier>
+      <UniqueIdentifier>39fef820-819d-47d0-a734-49e0769ff372</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\libs\ffmpeg">
-      <UniqueIdentifier>60cdad3d-4298-4d38-ab3c-e31edea5b2bb</UniqueIdentifier>
+      <UniqueIdentifier>e5b9ad14-e416-4bd7-aeff-53d53084f070</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\libs\freetype">
-      <UniqueIdentifier>514a5f87-7182-4950-8864-c71f303df5af</UniqueIdentifier>
+      <UniqueIdentifier>426bf5de-2e61-437e-b0e7-7f8755d62db0</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\libs\gif">
-      <UniqueIdentifier>0bd249c7-1d60-452e-a2c4-5736bafb3c21</UniqueIdentifier>
+      <UniqueIdentifier>e12e8bc3-ce19-408d-8992-e7182afd8809</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\libs\libjpeg_turbo">
-      <UniqueIdentifier>f5a4b0b2-e4b2-4f26-b012-396d1b85f41e</UniqueIdentifier>
+      <UniqueIdentifier>5456faf0-b248-4bd7-8cbd-4b1a8ddd05cb</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\libs\libpng">
-      <UniqueIdentifier>4d5c4e18-dcd9-46ed-a824-819a0cf063c1</UniqueIdentifier>
+      <UniqueIdentifier>e6c0b8c8-ac29-4b9d-a634-e73eee75a535</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\libs\lodepng">
-      <UniqueIdentifier>c0ea9993-428c-4519-a033-dd40ef0cbf1e</UniqueIdentifier>
+      <UniqueIdentifier>3eb134ed-e888-4a69-aa11-9a0c2d644573</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\libs\qrcode">
-      <UniqueIdentifier>501986b1-3913-4e3f-aea3-58c4ecf1fbe4</UniqueIdentifier>
+      <UniqueIdentifier>603ebe12-e291-44bc-b04b-7bfc479bde8d</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\libs\rlottie">
-      <UniqueIdentifier>de34e460-ca47-42b6-820c-dcf8be856f13</UniqueIdentifier>
+      <UniqueIdentifier>b6b3c080-6e87-4ce9-bad6-682303f24ece</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\libs\tiny_ttf">
-      <UniqueIdentifier>3d9d7e64-c961-4535-95ea-e568638a75f6</UniqueIdentifier>
+      <UniqueIdentifier>4d2867a8-6fa8-47f0-9e5e-ac1b354d88a0</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\libs\tjpgd">
-      <UniqueIdentifier>cb59c033-7e85-49f4-a211-1df1a4458c92</UniqueIdentifier>
+      <UniqueIdentifier>c9de6f9c-b2bf-4998-82cf-7735c5880ada</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\others">
-      <UniqueIdentifier>9135e65d-d854-4417-9aa3-82e843fc50d6</UniqueIdentifier>
+      <UniqueIdentifier>3b00811b-a3d7-463c-ba66-d4a0b5984ffe</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\others\file_explorer">
-      <UniqueIdentifier>6bb3840f-f39f-4f72-9251-54302e1b6140</UniqueIdentifier>
+      <UniqueIdentifier>3f8ca9df-b1e1-43af-bb19-d1ab8b7d0223</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\others\fragment">
-      <UniqueIdentifier>521af5e5-1a2b-47bd-a413-ede2be9f9826</UniqueIdentifier>
+      <UniqueIdentifier>4a30dc25-6752-4924-b49d-e5632ee97e78</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\others\gridnav">
-      <UniqueIdentifier>e3a58a22-6c38-4b9c-88b8-28cc694a8402</UniqueIdentifier>
+      <UniqueIdentifier>99a68e93-fd0d-4418-a8ec-008cc8d40b21</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\others\ime">
-      <UniqueIdentifier>e938a297-38a8-42d5-a6c3-1a6995dfdf5c</UniqueIdentifier>
+      <UniqueIdentifier>f6892f71-d105-4fa7-8c71-51866c52d17e</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\others\imgfont">
-      <UniqueIdentifier>14228c62-9192-4e99-8532-bd0ba6a067c2</UniqueIdentifier>
+      <UniqueIdentifier>713757c9-70ec-4903-8827-a8d1405bac22</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\others\monkey">
-      <UniqueIdentifier>fc5d8838-979e-4303-a1a9-19e80fd2502b</UniqueIdentifier>
+      <UniqueIdentifier>8a671b3e-db4f-402a-b89a-bd0c03577662</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\others\observer">
-      <UniqueIdentifier>6dd57c4d-3364-44a3-9138-95755ac89099</UniqueIdentifier>
+      <UniqueIdentifier>1cd06f96-ae52-4883-a77a-7fb74d0f096c</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\others\snapshot">
-      <UniqueIdentifier>c8b1259a-56b2-461f-9f27-89a2d52302ce</UniqueIdentifier>
+      <UniqueIdentifier>c3073505-0294-48cf-923f-cdc355458333</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\porting">
-      <UniqueIdentifier>65e6d5a8-ba10-4df1-bad5-52be275663c8</UniqueIdentifier>
+      <UniqueIdentifier>16b0edb4-5502-4875-a39c-0e6c1addf892</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\porting\osal">
-      <UniqueIdentifier>d4012b59-b4ac-4815-90ac-df4cedf70bf5</UniqueIdentifier>
+      <UniqueIdentifier>4d492f95-1bf1-4752-8e24-67568ae6c9e3</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\scroll">
-      <UniqueIdentifier>1befc537-8f2e-4bb6-b6ed-b65e6993efae</UniqueIdentifier>
+      <UniqueIdentifier>428f99c2-deed-489b-9633-779fa5133ec8</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\styles">
-      <UniqueIdentifier>fd4f767d-b3ce-4ae5-804a-37bc7dd72602</UniqueIdentifier>
+      <UniqueIdentifier>2ea672c1-4b7f-4767-aec0-4ec863be8b59</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets">
-      <UniqueIdentifier>30b185d8-44a0-4f28-819d-95e4d288bf98</UniqueIdentifier>
+      <UniqueIdentifier>b11c7f4b-1cdc-421c-91bc-295e0ed4894d</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\animimg">
-      <UniqueIdentifier>48f8e6ec-ff3b-4267-b67b-9051cbe6cb54</UniqueIdentifier>
+      <UniqueIdentifier>32eece2b-987d-47cc-970a-c5bc2e7aab8f</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\arc">
-      <UniqueIdentifier>ac222559-b940-4d99-81c4-6d6abbcfc261</UniqueIdentifier>
+      <UniqueIdentifier>cc6eec6b-69fc-4bb5-aca9-d5a4b30de64d</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\bar">
-      <UniqueIdentifier>a6f085e9-e71b-438f-8116-b41981cb1852</UniqueIdentifier>
+      <UniqueIdentifier>9c9fcf1d-3b72-4e1f-8b85-8e9138211f26</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\button">
-      <UniqueIdentifier>6f80b053-0e64-40f4-b710-917a3ede2ace</UniqueIdentifier>
+      <UniqueIdentifier>fcca52b2-bc05-4008-99af-fccf63c064a3</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\buttonmatrix">
-      <UniqueIdentifier>0bda5e56-a349-4a2b-8e60-76932513104b</UniqueIdentifier>
+      <UniqueIdentifier>bd6f5660-b4a8-4ef0-b173-1742a404d850</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\calendar">
-      <UniqueIdentifier>d99e264a-246f-4154-b7e5-1fb41dc229f3</UniqueIdentifier>
+      <UniqueIdentifier>250e28f1-46df-4b66-b466-48c21df5db08</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\canvas">
-      <UniqueIdentifier>37897109-3146-4887-be84-5790d97e86b1</UniqueIdentifier>
+      <UniqueIdentifier>9effe942-9b52-4dc6-a26d-6ba7e8a88e33</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\chart">
-      <UniqueIdentifier>f8314ffe-f4c6-432c-80c8-e82817b0bcb7</UniqueIdentifier>
+      <UniqueIdentifier>455e5c3a-04f7-4747-92df-76e908d8536f</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\checkbox">
-      <UniqueIdentifier>03056a90-c4c6-4e43-9bd8-b5ae7e50abe9</UniqueIdentifier>
+      <UniqueIdentifier>076bf928-1b60-44b2-ba4f-91b061fb0de0</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\dropdown">
-      <UniqueIdentifier>d4ee6a46-a675-4bc1-8c52-39dbe97dc638</UniqueIdentifier>
+      <UniqueIdentifier>060951fc-bb3b-4269-beb3-31141cd48a15</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\image">
-      <UniqueIdentifier>9fc6ca13-36b4-4a72-a81d-1bc723b95736</UniqueIdentifier>
+      <UniqueIdentifier>34070c43-1b3f-47d6-8ac6-86647ab83ba9</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\imagebutton">
-      <UniqueIdentifier>0ab48d0e-1a21-40c9-8e17-c738f4f5f90f</UniqueIdentifier>
+      <UniqueIdentifier>01e71f11-f50b-4af2-92a5-66af38d33721</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\keyboard">
-      <UniqueIdentifier>6d964b8d-2f5a-489c-b239-4284cad7c483</UniqueIdentifier>
+      <UniqueIdentifier>f3a7479a-63fe-48f4-8b1f-f8f111b11a99</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\label">
-      <UniqueIdentifier>d9a6641e-538b-4414-a235-0ef288c6bfcf</UniqueIdentifier>
+      <UniqueIdentifier>2d9899bf-63aa-4b2d-ad4f-5388cc930563</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\led">
-      <UniqueIdentifier>8c0f30ff-59cf-4ee1-8314-60d8ad138736</UniqueIdentifier>
+      <UniqueIdentifier>d4fa6553-762b-4c9f-8d90-50c88a2317bf</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\line">
-      <UniqueIdentifier>8d7021ec-b37f-4467-b781-e0acc8d4949e</UniqueIdentifier>
+      <UniqueIdentifier>7658ea1e-12a0-4d3f-b9d2-8b07d2aeb4b1</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\list">
-      <UniqueIdentifier>8f110b2c-cbd7-44a8-9f7f-3daa8ec02c4e</UniqueIdentifier>
+      <UniqueIdentifier>f1a22421-17b9-46eb-b94e-f6f552d8fa8f</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\lottie">
-      <UniqueIdentifier>8f043c92-b1e7-42f2-9b91-bcd9ee865424</UniqueIdentifier>
+      <UniqueIdentifier>bfceee01-e9d6-4188-81f2-9242cf5bc9eb</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\menu">
-      <UniqueIdentifier>9ce89323-6100-4f45-a79d-cb97130716fe</UniqueIdentifier>
+      <UniqueIdentifier>cc97453d-45e7-4d5b-a12d-87feab15fbe6</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\msgbox">
-      <UniqueIdentifier>04dffba9-f0ef-47c4-bf93-9c4cfc5b6b7b</UniqueIdentifier>
+      <UniqueIdentifier>95fcbb0f-0d85-48d2-8f09-562fdfdb3437</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\obj">
-      <UniqueIdentifier>5ec58776-d673-4644-9956-9fe0cd0d59e6</UniqueIdentifier>
+      <UniqueIdentifier>8fff8353-29b0-47c9-9c8e-36dbff90b3e6</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\roller">
-      <UniqueIdentifier>0254674e-d44c-4597-a0db-4935dd411ee7</UniqueIdentifier>
+      <UniqueIdentifier>43dc7c23-c521-4beb-95fa-dc2da861b750</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\scale">
-      <UniqueIdentifier>39ec8659-1ccd-49c3-a879-72dd2d078ce5</UniqueIdentifier>
+      <UniqueIdentifier>7ba9fd53-b22b-4e41-9eee-49153e5e551b</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\slider">
-      <UniqueIdentifier>893f829b-f92d-4910-8229-852276609b43</UniqueIdentifier>
+      <UniqueIdentifier>8ead424a-48a0-415e-b55b-ac59b224fe01</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\span">
-      <UniqueIdentifier>89c752c7-f9ed-4311-86df-caae3f5c9273</UniqueIdentifier>
+      <UniqueIdentifier>34b19812-d4b0-4e72-a841-fb99e243dec5</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\spinbox">
-      <UniqueIdentifier>4df34c19-3182-4591-97e5-d5d1c5e7c70a</UniqueIdentifier>
+      <UniqueIdentifier>5b7d771d-0c76-488a-bbc7-0cd73ba4091a</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\spinner">
-      <UniqueIdentifier>02d53007-6e54-4b7d-b02f-9cafb50bc5cc</UniqueIdentifier>
+      <UniqueIdentifier>bfc945d6-385f-4f76-ac1b-7e2dd7d195f0</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\switch">
-      <UniqueIdentifier>7880e82e-a409-408a-8768-0d53059ca5e6</UniqueIdentifier>
+      <UniqueIdentifier>574a9445-b762-4096-bb14-f43e37f2fb46</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\table">
-      <UniqueIdentifier>a747af9d-7883-4abc-a14e-711630a01ee4</UniqueIdentifier>
+      <UniqueIdentifier>6fdfe553-7c7d-4e47-89e5-2e7e0f38e92c</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\tabview">
-      <UniqueIdentifier>e8bf90bc-93c8-4096-8d32-630d43bb04f4</UniqueIdentifier>
+      <UniqueIdentifier>f7ef0140-3cc4-4e6a-a2bc-a9aec71ad51a</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\textarea">
-      <UniqueIdentifier>113671fd-5f4d-4fa9-a8bf-f3830448ca27</UniqueIdentifier>
+      <UniqueIdentifier>9f8da047-e6f6-456c-bbda-ae21aa70f9c4</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\tileview">
-      <UniqueIdentifier>c5cddbab-9314-4feb-9b28-fb2bcb36a0e9</UniqueIdentifier>
+      <UniqueIdentifier>92b77c6d-2473-4cd9-acc6-2ec36b46e8c8</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\examples\widgets\win">
-      <UniqueIdentifier>e018a307-b103-41ee-a503-eef05c0aa8a0</UniqueIdentifier>
+      <UniqueIdentifier>00fb84b2-fe42-4f04-aaa1-46326b6d7cd0</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src">
-      <UniqueIdentifier>253e7b7b-67f1-493b-9d8f-4a83b4936902</UniqueIdentifier>
+      <UniqueIdentifier>ff8db7a8-213b-43bc-9e47-71b2d6ff6e51</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\core">
-      <UniqueIdentifier>0cb9d46d-2435-4ae1-95b3-164a60360aa0</UniqueIdentifier>
+      <UniqueIdentifier>a084ecac-91d5-4171-ac4f-3d8aa75aa1ca</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\display">
-      <UniqueIdentifier>730ff8fd-ca1e-411d-ad22-f3227edbf5eb</UniqueIdentifier>
+      <UniqueIdentifier>3ce27bf2-4dd8-4666-939c-312ce7fd0b2a</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\draw">
-      <UniqueIdentifier>7bd466a7-e7a3-4b5f-a1a1-053c14c59ff4</UniqueIdentifier>
+      <UniqueIdentifier>d70cac5b-b40d-4b9a-a861-cb356b08804b</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_LvglPlatform\lvgl\src\draw\dma2d">
+      <UniqueIdentifier>03fc6a39-b8d2-40b2-be2f-d7612f76db90</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\draw\nxp">
-      <UniqueIdentifier>246c0873-1ff5-4bcf-896a-7017fa91f6a1</UniqueIdentifier>
+      <UniqueIdentifier>db00b5bc-227b-4b63-be12-064d0e4cf9a7</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\draw\nxp\pxp">
-      <UniqueIdentifier>a696df86-d89f-492d-87d4-5ac86de4b95e</UniqueIdentifier>
+      <UniqueIdentifier>d992ebb7-cfd1-4d4e-a93c-7d2a304d2a0e</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\draw\nxp\vglite">
-      <UniqueIdentifier>8c3b2ed5-2667-473b-9579-5f447ed922fe</UniqueIdentifier>
+      <UniqueIdentifier>f0b93758-cb9c-46f4-88e8-5cad29eda6d3</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\draw\renesas">
-      <UniqueIdentifier>2fa564d0-0e2c-43fe-88b3-d96a0a7d58d0</UniqueIdentifier>
+      <UniqueIdentifier>65f2534d-a4e5-4642-8457-3416365371c7</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\draw\renesas\dave2d">
-      <UniqueIdentifier>f6e47a84-a151-4a49-ae78-31d37badc9f0</UniqueIdentifier>
+      <UniqueIdentifier>171e941d-8745-4727-8b65-45c47f4ae0dc</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\draw\sdl">
-      <UniqueIdentifier>bcc28a8a-6033-434b-bd82-3bb7d8cba614</UniqueIdentifier>
+      <UniqueIdentifier>129c5e9f-d1fa-43a2-88fa-0d95e6d746d6</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\draw\sw">
-      <UniqueIdentifier>7063b560-702e-4080-8e0c-e3bd74e7770f</UniqueIdentifier>
+      <UniqueIdentifier>e04bf933-c508-462b-8d84-f306b3e4239f</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\draw\sw\arm2d">
-      <UniqueIdentifier>b82d243b-0326-4aae-8654-4f4225ed8a02</UniqueIdentifier>
+      <UniqueIdentifier>0ba3798d-5afb-412b-9e3e-6c2e4bf0c026</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\draw\sw\blend">
-      <UniqueIdentifier>c13f5ca4-d1b2-438b-b377-54c1a564431a</UniqueIdentifier>
+      <UniqueIdentifier>2e2424a9-eb8a-4831-bcb5-b74f51763715</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\draw\sw\blend\arm2d">
-      <UniqueIdentifier>99d672c9-9860-4d4a-b2b8-1651b5d3a9ca</UniqueIdentifier>
+      <UniqueIdentifier>5aa76f8a-2efd-4039-ae07-05cbe9c957cd</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\draw\sw\blend\helium">
-      <UniqueIdentifier>d3a3469f-11b9-4cf7-9569-df2a21fa18c8</UniqueIdentifier>
+      <UniqueIdentifier>8193283e-c0ee-4249-bc97-4eed69e563c3</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\draw\sw\blend\neon">
-      <UniqueIdentifier>9e8bcbc9-55a7-4d37-9f8d-ff6c6cefe85b</UniqueIdentifier>
+      <UniqueIdentifier>6cf9c97b-4b42-4e87-a731-227a55f85408</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\draw\vg_lite">
-      <UniqueIdentifier>e16601e3-8c8d-4e3d-9cbf-86e3d1be36e5</UniqueIdentifier>
+      <UniqueIdentifier>4a2bd1d1-bade-44d1-8d78-a746f5796187</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers">
-      <UniqueIdentifier>9be9f96f-dc22-44f7-b035-df5f1d393477</UniqueIdentifier>
+      <UniqueIdentifier>d060fcd7-6517-4a03-bc29-d5257f817ea5</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\display">
-      <UniqueIdentifier>10d1226d-65ea-49bb-be21-caa04487f9d8</UniqueIdentifier>
+      <UniqueIdentifier>d6fff07d-1a46-4ff9-bad0-44431d19f161</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\display\drm">
-      <UniqueIdentifier>a8bf0d86-1741-46bf-8655-8ddb422703eb</UniqueIdentifier>
+      <UniqueIdentifier>1ccb72e1-5fe8-4dd8-b711-df1e64d2e9c4</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\display\fb">
-      <UniqueIdentifier>324c5ee0-0d2a-42b1-a71f-4f1d9ae7f16a</UniqueIdentifier>
+      <UniqueIdentifier>ac59ab0c-23a2-4805-a038-e82eabfa67f2</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\display\ili9341">
-      <UniqueIdentifier>85b6bce1-ae6a-49b7-b17b-22177d3500ab</UniqueIdentifier>
+      <UniqueIdentifier>e6acc85f-b99f-4dc5-b62e-6ba7906e609e</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\display\lcd">
-      <UniqueIdentifier>8e16d70d-93d3-4b9e-8939-2eb23f692f74</UniqueIdentifier>
+      <UniqueIdentifier>9b9c0f3d-006e-43e8-847b-4755f33ca790</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\display\renesas_glcdc">
-      <UniqueIdentifier>44bb28e6-9b58-49ba-90b9-d59309acee15</UniqueIdentifier>
+      <UniqueIdentifier>cf7073e6-6a88-4598-ab61-190ffef1c582</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\display\st7735">
-      <UniqueIdentifier>713a2a69-ad7c-4b06-b6d3-20e65d52d758</UniqueIdentifier>
+      <UniqueIdentifier>960973c9-10d8-429b-aed0-92c932857693</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\display\st7789">
-      <UniqueIdentifier>a5ab4b3c-ceed-4c9d-91e0-14bbeec83353</UniqueIdentifier>
+      <UniqueIdentifier>18a11e93-0cce-4b96-b1fc-2567755b95cc</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\display\st7796">
-      <UniqueIdentifier>3585b273-6215-49c7-8247-ee9955543bd4</UniqueIdentifier>
+      <UniqueIdentifier>7a2e3e9b-f61d-4de2-b15f-331a7fa13537</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\display\tft_espi">
-      <UniqueIdentifier>88892b96-a691-415f-a2d8-e8c62787b498</UniqueIdentifier>
+      <UniqueIdentifier>80a1686f-a6c2-435c-ac2e-0156b33fe911</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\evdev">
-      <UniqueIdentifier>79a40cce-05eb-4734-b559-d5969dae1614</UniqueIdentifier>
+      <UniqueIdentifier>ad34ee97-2b99-4959-b844-5eb937289090</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\glfw">
-      <UniqueIdentifier>cadf4d21-e305-47ea-94a3-b8318c0e3d95</UniqueIdentifier>
+      <UniqueIdentifier>c64fe8d7-4c81-4238-9a67-b8e8cf004bc7</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\libinput">
-      <UniqueIdentifier>da9d9a83-0391-4ff4-b852-5a5602f08214</UniqueIdentifier>
+      <UniqueIdentifier>d01f5a74-4dfa-417d-ae2b-dddf442ed928</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\nuttx">
-      <UniqueIdentifier>bb17a715-ef63-47be-966d-99f18c35f173</UniqueIdentifier>
+      <UniqueIdentifier>76fed3b9-4740-4aaa-8139-a50076080849</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\qnx">
-      <UniqueIdentifier>5e81a715-93bb-4bdc-8faf-2da0dde08c11</UniqueIdentifier>
+      <UniqueIdentifier>405478a4-1ce2-43e5-8b6c-91fb87b2615c</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\sdl">
-      <UniqueIdentifier>2e66e2f0-ef7f-49be-b87d-b658e41013c7</UniqueIdentifier>
+      <UniqueIdentifier>90ddfa61-80b2-4a7f-af7c-0e7aadeb6ef6</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\wayland">
-      <UniqueIdentifier>5147f032-7d6b-4496-90b5-e2320104a187</UniqueIdentifier>
+      <UniqueIdentifier>80575d52-4c78-493e-8cd1-f89b70944171</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\windows">
-      <UniqueIdentifier>0cde90ae-7436-43b7-930d-ee7c4b5dab44</UniqueIdentifier>
+      <UniqueIdentifier>d8b4c69a-f79f-4eeb-860d-487d8f27ea7a</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\drivers\x11">
-      <UniqueIdentifier>3bd3446b-e719-4371-b1fc-a17b5e91078f</UniqueIdentifier>
+      <UniqueIdentifier>ebb54878-0d95-4837-a849-229fea79b27e</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\font">
-      <UniqueIdentifier>1ffae4ae-9985-48a6-8d32-8c5cbb687ed1</UniqueIdentifier>
+      <UniqueIdentifier>84859550-0687-4d73-b5e0-bfff66b758c6</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\indev">
-      <UniqueIdentifier>588b6c9d-0756-4a6d-9b24-82c91979c3d8</UniqueIdentifier>
+      <UniqueIdentifier>acd6f736-afa6-4927-933c-3a208a8faa55</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\layouts">
-      <UniqueIdentifier>1679b19e-5d81-4943-91c9-5b521787e10e</UniqueIdentifier>
+      <UniqueIdentifier>fc414364-d23c-45ef-9d9b-5223b91c744d</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\layouts\flex">
-      <UniqueIdentifier>3a0a6c7b-7995-4106-911b-adf6dc35197f</UniqueIdentifier>
+      <UniqueIdentifier>d7744ae1-a857-4238-a005-0ab179c16b8e</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\layouts\grid">
-      <UniqueIdentifier>166cfcc1-0ada-4426-9943-84b191d063e9</UniqueIdentifier>
+      <UniqueIdentifier>0e1afc69-259b-4caa-98aa-b422b5c3b6a5</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs">
-      <UniqueIdentifier>b8b37702-ad04-4b5a-9978-d5746546201c</UniqueIdentifier>
+      <UniqueIdentifier>dd706ebc-c7e0-4d49-b158-18737d1c19c0</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\barcode">
-      <UniqueIdentifier>da0e4c45-4ead-4a39-ad84-9d8d7f3539c4</UniqueIdentifier>
+      <UniqueIdentifier>79bffaa0-ca7d-494b-8196-c526713acda5</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\bin_decoder">
-      <UniqueIdentifier>694a0bc5-f0c3-4f98-a99e-b4b6034f7430</UniqueIdentifier>
+      <UniqueIdentifier>1a9f06e0-bb93-43fb-8309-06fa559cee6f</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\bmp">
-      <UniqueIdentifier>5663272d-1bcd-4713-9402-0dfd51dc722d</UniqueIdentifier>
+      <UniqueIdentifier>c0c5e78e-156a-424a-945a-5f76f1564d0a</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\ffmpeg">
-      <UniqueIdentifier>c7418bc6-e5ef-4182-9f03-31e39b67ca3f</UniqueIdentifier>
+      <UniqueIdentifier>9ac6c284-40e0-4a4a-a832-eddc8d3d49ad</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\freetype">
-      <UniqueIdentifier>c653896d-1fc5-4ed7-bfff-3a64745e49ba</UniqueIdentifier>
+      <UniqueIdentifier>4c2ab309-634e-4be9-bff3-b76b48dfd195</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\fsdrv">
-      <UniqueIdentifier>4448ed44-6f36-40c2-be3e-08a7593d353f</UniqueIdentifier>
+      <UniqueIdentifier>759ee6d5-f6f9-4021-aaaa-1294a03e7dde</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\gif">
-      <UniqueIdentifier>9887f8be-655e-4969-9057-83d7330598d9</UniqueIdentifier>
+      <UniqueIdentifier>f33cf27c-1a36-4566-814f-d507c6deceb5</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\libjpeg_turbo">
-      <UniqueIdentifier>925a34a3-2ac7-4828-a80c-d83201821202</UniqueIdentifier>
+      <UniqueIdentifier>328509ff-4640-4355-8960-85510de5f296</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\libpng">
-      <UniqueIdentifier>25eda9b9-4bb9-49ef-be68-a137830d1d4d</UniqueIdentifier>
+      <UniqueIdentifier>431cab5a-3cc3-4ac1-84be-bb741541733e</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\lodepng">
-      <UniqueIdentifier>70914656-f824-4d78-a533-5874336de081</UniqueIdentifier>
+      <UniqueIdentifier>beab308c-6024-4e71-ba9d-73ab293e7023</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\lz4">
-      <UniqueIdentifier>2f4d13ca-e394-4790-afc7-0637643d5fb3</UniqueIdentifier>
+      <UniqueIdentifier>23e18c33-2f51-4c14-b581-3d8c6673434d</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\qrcode">
-      <UniqueIdentifier>696a102f-7fac-45cf-aea9-e88d2b36e5dd</UniqueIdentifier>
+      <UniqueIdentifier>6b03a7e6-d1e8-48fd-940e-e9fd31793a23</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\rle">
-      <UniqueIdentifier>78441750-eaa2-4dcc-b91f-76e52c38dda6</UniqueIdentifier>
+      <UniqueIdentifier>1f41448d-3821-4149-8e4b-971fc82cb264</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\rlottie">
-      <UniqueIdentifier>0d1583fe-8652-4fb7-8308-f022369faf85</UniqueIdentifier>
+      <UniqueIdentifier>8f21d8d7-9597-4c6f-8d8e-56c79f0989e1</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\thorvg">
-      <UniqueIdentifier>2fe4e963-9fc9-4ee8-b44f-13ce7b1143fe</UniqueIdentifier>
+      <UniqueIdentifier>29fadf13-ab97-4780-8df3-6e36c62da92b</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\thorvg\rapidjson">
-      <UniqueIdentifier>b929d844-a73a-4190-b27d-e6d7e3beb45f</UniqueIdentifier>
+      <UniqueIdentifier>b2340c9f-88f6-4542-8e10-4fcea3bd15b9</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\thorvg\rapidjson\error">
-      <UniqueIdentifier>11c93ab1-198f-41ab-a826-fea347a4b69c</UniqueIdentifier>
+      <UniqueIdentifier>1164a166-985e-4801-8d48-416c804e9267</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\thorvg\rapidjson\internal">
-      <UniqueIdentifier>1fb9f55a-1502-4d31-af6d-9a5cdd1061e5</UniqueIdentifier>
+      <UniqueIdentifier>849a3728-2741-4c3c-9e60-6bd258bd15dd</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\thorvg\rapidjson\msinttypes">
-      <UniqueIdentifier>da28231a-9a08-457c-8dc5-05bad9fadbb7</UniqueIdentifier>
+      <UniqueIdentifier>c5eb44c0-1af4-418f-93e5-b675a27b526e</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\tiny_ttf">
-      <UniqueIdentifier>5959bf89-b327-48c7-a965-ed8af0acce80</UniqueIdentifier>
+      <UniqueIdentifier>5610976c-e7e8-4411-9fa1-f45acc5cc6bb</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\libs\tjpgd">
-      <UniqueIdentifier>5c0bf885-b423-42f0-8a92-50834e56395f</UniqueIdentifier>
+      <UniqueIdentifier>bb4d5f31-b437-4516-aced-bf9fc0e9007c</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\misc">
-      <UniqueIdentifier>944cd4a5-fc84-40b1-adab-7ce53a2926e6</UniqueIdentifier>
+      <UniqueIdentifier>d59e5172-d470-4957-83e2-1da83a0c9e71</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\misc\cache">
-      <UniqueIdentifier>d00c94eb-4023-40e9-a7de-d83f6283815a</UniqueIdentifier>
+      <UniqueIdentifier>338fabcb-5a14-4c01-ad1d-ec21d9903a47</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\osal">
-      <UniqueIdentifier>b600b812-3dd4-49fa-9375-2faa4865609f</UniqueIdentifier>
+      <UniqueIdentifier>6f5f420d-4e55-4df1-aca1-417e12f005f9</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\others">
-      <UniqueIdentifier>f09592a8-ab8f-45a7-b72b-8b2fa822b104</UniqueIdentifier>
+      <UniqueIdentifier>4378648e-8270-4926-b69b-30e14d854687</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\others\file_explorer">
-      <UniqueIdentifier>2f0b0e24-e97f-402b-a820-2e6e59045a90</UniqueIdentifier>
+      <UniqueIdentifier>a7b54adc-b8d0-420a-a677-d893de984098</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\others\font_manager">
-      <UniqueIdentifier>815700d7-b6c6-4a24-a9a8-a698400f1bfe</UniqueIdentifier>
+      <UniqueIdentifier>8a337abe-3f59-46d5-a067-8c4797b7c930</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\others\fragment">
-      <UniqueIdentifier>24ebd6a6-91c1-4a27-b594-02873c5638e8</UniqueIdentifier>
+      <UniqueIdentifier>f581a4c6-38b3-4f94-8351-ce6b458910a5</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\others\gridnav">
-      <UniqueIdentifier>50ed8c8a-c984-4ee1-8f9b-073cc0bd62cd</UniqueIdentifier>
+      <UniqueIdentifier>f6ce9165-669e-48a5-bffb-61ba93826308</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\others\ime">
-      <UniqueIdentifier>47eb47db-0638-42fb-bb1e-de05b1b623b4</UniqueIdentifier>
+      <UniqueIdentifier>d8a72413-bd96-4b07-ba75-278d5e898d80</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\others\imgfont">
-      <UniqueIdentifier>903a0963-274c-4402-a1fa-c60a1976c6de</UniqueIdentifier>
+      <UniqueIdentifier>d88a55d0-b1ac-4b1c-a04c-e89201c19874</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\others\monkey">
-      <UniqueIdentifier>5aec39ee-eb26-45f8-98dd-6ffddf4ea49d</UniqueIdentifier>
+      <UniqueIdentifier>40301b7d-7f2d-4d0d-b9ef-9c8505b131fb</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\others\observer">
-      <UniqueIdentifier>877acb51-3c71-466f-906c-efb71d68595e</UniqueIdentifier>
+      <UniqueIdentifier>c7eacdcb-b0fe-4489-bd97-de5c6437d44e</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\others\snapshot">
-      <UniqueIdentifier>4f2a5cda-e988-4d22-b83d-4334bd8a3631</UniqueIdentifier>
+      <UniqueIdentifier>f4593a84-d457-45ce-bae9-53485310eca9</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\others\sysmon">
-      <UniqueIdentifier>9e82d19f-c8cc-4cdf-8807-68eba21c9236</UniqueIdentifier>
+      <UniqueIdentifier>709db8fc-1cec-473a-be62-ed96247256a6</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\others\vg_lite_tvg">
-      <UniqueIdentifier>a110e0d1-0143-44c4-8968-776408bbd09a</UniqueIdentifier>
+      <UniqueIdentifier>142fd737-48e1-44a1-a755-4928f69518d1</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\stdlib">
-      <UniqueIdentifier>60c795e9-47ae-49b0-bda1-e1f34c6746ce</UniqueIdentifier>
+      <UniqueIdentifier>9656fd9b-308f-4e7c-b923-02e4cf61f3b0</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\stdlib\builtin">
-      <UniqueIdentifier>1adbf8b9-d590-4399-af04-0389a6276cfa</UniqueIdentifier>
+      <UniqueIdentifier>4cd758cc-eab8-4a23-af18-bfc2494fcf29</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\stdlib\clib">
-      <UniqueIdentifier>a471d509-81e7-46d4-8670-4287d78a15b7</UniqueIdentifier>
+      <UniqueIdentifier>7459dba8-e909-477b-abc8-2f9b86be3295</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\stdlib\micropython">
-      <UniqueIdentifier>9e411216-967f-4fa2-8778-0f5e0b43d9ab</UniqueIdentifier>
+      <UniqueIdentifier>e654420a-0c1e-4256-9bb2-7b9d84361c71</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\stdlib\rtthread">
-      <UniqueIdentifier>ac65ebda-3fc0-4b21-9f12-6b52a8a1956a</UniqueIdentifier>
+      <UniqueIdentifier>280645d9-964a-461d-9b05-a339466fe2a4</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\themes">
-      <UniqueIdentifier>1ff07f20-1b19-4b0a-bc65-c8a4580504ab</UniqueIdentifier>
+      <UniqueIdentifier>5ee174d3-77d1-4366-a9c3-51ec1ffc1396</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\themes\default">
-      <UniqueIdentifier>3d448666-3a40-47e6-8676-2ea9b0bc20db</UniqueIdentifier>
+      <UniqueIdentifier>d270240b-7e20-498f-8228-19778a391813</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\themes\mono">
-      <UniqueIdentifier>ade81407-88ec-47f0-a60c-3353f7c88b23</UniqueIdentifier>
+      <UniqueIdentifier>6453a774-d4dc-4d6b-bcd7-4e5a7b8e0e9b</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\themes\simple">
-      <UniqueIdentifier>2e7062e5-bf68-4d86-a434-c011b44a20b6</UniqueIdentifier>
+      <UniqueIdentifier>944dde71-b2df-46e2-a6bd-3c271d0a33ce</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\tick">
-      <UniqueIdentifier>fb12d5e7-b04f-4b55-902b-8607b56b4fa0</UniqueIdentifier>
+      <UniqueIdentifier>4002acca-1e63-4e92-be21-15a9f378f494</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets">
-      <UniqueIdentifier>669c9fc9-5410-4378-9f63-e559ddc9036a</UniqueIdentifier>
+      <UniqueIdentifier>994aa4be-0ddf-4652-8def-592800ce19ae</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\animimage">
-      <UniqueIdentifier>f6772bc3-aa9e-488f-ba65-e704ce7f8b6c</UniqueIdentifier>
+      <UniqueIdentifier>49d42860-f095-48b9-b7f9-394014bb4b2d</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\arc">
-      <UniqueIdentifier>64f5eb79-34e1-44df-82e8-a78211ed7479</UniqueIdentifier>
+      <UniqueIdentifier>f6f469f8-3073-454d-a9ce-7b56f8271881</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\bar">
-      <UniqueIdentifier>103e890d-a32b-429c-9016-057740453745</UniqueIdentifier>
+      <UniqueIdentifier>eb818c7d-9c17-4a4a-b38e-c458c6a859c8</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\button">
-      <UniqueIdentifier>ff3a99f1-87fd-41f4-b820-216a36ce41ee</UniqueIdentifier>
+      <UniqueIdentifier>60384426-14c6-42de-98aa-ae3565094c04</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\buttonmatrix">
-      <UniqueIdentifier>6f851e4c-1e17-428e-869e-a9dda8d1d716</UniqueIdentifier>
+      <UniqueIdentifier>7725ee05-5740-47ed-b4d1-bcf47a5c0168</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\calendar">
-      <UniqueIdentifier>7e25bb4d-0da6-4a03-880a-5028e4389761</UniqueIdentifier>
+      <UniqueIdentifier>50cc8496-f126-424d-afed-2b6ff71b0afb</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\canvas">
-      <UniqueIdentifier>0d8ec142-de47-4c0f-91e5-4238790cd735</UniqueIdentifier>
+      <UniqueIdentifier>ecede29b-7f0b-44a4-9eda-54190ac87b41</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\chart">
-      <UniqueIdentifier>72149deb-6cbd-4183-9a0a-cfcfc7ffd8c6</UniqueIdentifier>
+      <UniqueIdentifier>06d44d1b-65e6-4de1-b1dc-57e74d5fb65b</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\checkbox">
-      <UniqueIdentifier>9b154399-a5c3-4809-a447-279baed55718</UniqueIdentifier>
+      <UniqueIdentifier>f1a7e644-c1f9-4dde-a42c-8bf1378a4d0e</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\dropdown">
-      <UniqueIdentifier>22b71e0c-bace-4d70-9a0a-2ed9fe72d314</UniqueIdentifier>
+      <UniqueIdentifier>e3b994b5-cd2d-41f2-b10d-8dabed8e3171</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\image">
-      <UniqueIdentifier>f9be5bbf-af8e-43d0-9bac-bb002ad002b2</UniqueIdentifier>
+      <UniqueIdentifier>6cfffa45-efb7-4f76-a9c7-ee81031fcb81</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\imagebutton">
-      <UniqueIdentifier>6c81a25e-6659-48f0-ae47-92223903734b</UniqueIdentifier>
+      <UniqueIdentifier>7073b784-212f-4a4e-adb9-818fc5af5948</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\keyboard">
-      <UniqueIdentifier>9835165b-364a-4f75-a43a-2882fe8b39af</UniqueIdentifier>
+      <UniqueIdentifier>38aabaf4-63f2-40c9-89ec-6ca9fd2dec96</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\label">
-      <UniqueIdentifier>5a403c96-7346-479a-869f-8a6cf6d30a89</UniqueIdentifier>
+      <UniqueIdentifier>168be476-eee2-4698-8366-47c09ec19202</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\led">
-      <UniqueIdentifier>c630d399-7dca-4978-8c9a-9221faee47a3</UniqueIdentifier>
+      <UniqueIdentifier>7d975219-233c-4ff9-a5ec-eea2a165fb11</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\line">
-      <UniqueIdentifier>d79dda61-ed0b-4058-81b2-13f2203da53a</UniqueIdentifier>
+      <UniqueIdentifier>74e8a134-a674-4ac4-ba4f-ce7c8da2110e</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\list">
-      <UniqueIdentifier>50a09161-9927-4d27-8737-d0af5098d945</UniqueIdentifier>
+      <UniqueIdentifier>b85e7732-0809-4b0a-802c-4a78a239dd3b</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\lottie">
-      <UniqueIdentifier>e396f26c-d249-494a-b3d2-5be8fb552285</UniqueIdentifier>
+      <UniqueIdentifier>6d2aaaa8-ab3a-4ac2-ac50-218711ad0e47</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\menu">
-      <UniqueIdentifier>5d05f832-66a4-42c6-a58a-37cb03ec2957</UniqueIdentifier>
+      <UniqueIdentifier>308ef5ef-40a0-49ed-ab32-8bbf4485e3ce</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\msgbox">
-      <UniqueIdentifier>498a2201-4f43-41ca-82ea-5cb56ff21781</UniqueIdentifier>
+      <UniqueIdentifier>22d8e50e-deea-4c75-99ee-ead0cce049c0</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\objx_templ">
-      <UniqueIdentifier>92d69682-7e1b-461a-9545-d466888c1824</UniqueIdentifier>
+      <UniqueIdentifier>310fc5b8-781b-4296-af9d-1d16ead98a5f</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\property">
-      <UniqueIdentifier>a4062a65-c42b-422e-b184-a55abd98b746</UniqueIdentifier>
+      <UniqueIdentifier>56360743-c7b0-4848-97e0-7877278cc9c7</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\roller">
-      <UniqueIdentifier>a83bd7b8-7376-4af3-9ff9-e01b3577f806</UniqueIdentifier>
+      <UniqueIdentifier>e19c9f4c-ce5b-48b8-bd09-4d33da794e4d</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\scale">
-      <UniqueIdentifier>29c426a6-883e-46b3-ae60-9a7460f356b0</UniqueIdentifier>
+      <UniqueIdentifier>f5a1b014-4942-455d-bce5-0dd26e6cfcbb</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\slider">
-      <UniqueIdentifier>621e43c1-6326-427d-8b76-20934cc06c5c</UniqueIdentifier>
+      <UniqueIdentifier>ca7f67f7-3b22-459c-bfd3-369a2693edcb</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\span">
-      <UniqueIdentifier>63034830-f83d-433a-aa6d-717f4b4f1257</UniqueIdentifier>
+      <UniqueIdentifier>92578be0-4924-4593-b42e-27f2f93a8c4b</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\spinbox">
-      <UniqueIdentifier>41922077-3a06-42c9-91e9-d3b38d60bc72</UniqueIdentifier>
+      <UniqueIdentifier>a4ade312-eb69-45f4-9ab9-8f4a71b24206</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\spinner">
-      <UniqueIdentifier>e5ff25fa-085e-40f6-b2eb-9a6da8cd876e</UniqueIdentifier>
+      <UniqueIdentifier>0cb5e44a-0b24-4803-b700-7808da69859e</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\switch">
-      <UniqueIdentifier>4bf27b77-0b23-40ef-8dc9-9bfd6292f91f</UniqueIdentifier>
+      <UniqueIdentifier>e5e26774-8e7e-4b65-a0b2-424b1ecee912</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\table">
-      <UniqueIdentifier>3b297424-3656-4252-b654-52ed780a969c</UniqueIdentifier>
+      <UniqueIdentifier>a9482952-dbf2-4249-b60e-4f02c7162237</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\tabview">
-      <UniqueIdentifier>4c9165e9-9baf-4055-a9b6-63dc82ec6d53</UniqueIdentifier>
+      <UniqueIdentifier>6045ef54-8f1e-4cd8-aa97-1a116667c86b</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\textarea">
-      <UniqueIdentifier>0a810f94-b812-4ef4-b806-c49df0f98210</UniqueIdentifier>
+      <UniqueIdentifier>c1aef93d-d85e-423e-96c9-5ab22c835abb</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\tileview">
-      <UniqueIdentifier>090403cc-76d9-418b-a1df-cee46aec7cf1</UniqueIdentifier>
+      <UniqueIdentifier>01718fa0-05cd-464a-b191-8389745cf6e3</UniqueIdentifier>
     </Filter>
     <Filter Include="_LvglPlatform\lvgl\src\widgets\win">
-      <UniqueIdentifier>c988f5a3-329e-47f8-a749-3a3d4936fd6e</UniqueIdentifier>
+      <UniqueIdentifier>a42d2796-1f42-4fae-be23-5342c82a5b68</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
