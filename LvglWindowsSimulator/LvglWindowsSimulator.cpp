@@ -74,10 +74,11 @@ int main()
    // LVGL event examples
    // ----------------------------------
 
-   // lv_example_event_1();
-   // lv_example_event_2();
-   // lv_example_event_3();
-   // lv_example_event_4();
+   // lv_example_event_bubble();
+   // lv_example_event_button();
+   // lv_example_event_click();
+   // lv_example_event_draw();
+   // lv_example_event_streak();
 
    // ----------------------------------
    // LVGL get_started examples
@@ -329,6 +330,7 @@ int main()
    // lv_example_spinner_1();     // ok
 
    // lv_example_switch_1();      // ok
+   // lv_example_switch_2();      // ok
 
    // lv_example_table_1();
    // lv_example_table_2();       // ok
