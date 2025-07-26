@@ -17,24 +17,31 @@
     <MileProjectVersionTag Condition="false">Alpha 1</MileProjectVersionTag>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
-  <Import Project="..\Mile.Project.Windows\Mile.Project.Platform.x86.props" />
-  <Import Project="..\Mile.Project.Windows\Mile.Project.Platform.x64.props" />
-  <Import Project="..\Mile.Project.Windows\Mile.Project.Platform.ARM64.props" />
-  <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.Default.props" />
-  <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.props" />
+  <Import Sdk="Mile.Project.Configurations" Version="1.0.1622" Project="Mile.Project.Platform.x86.props" />
+  <Import Sdk="Mile.Project.Configurations" Version="1.0.1622" Project="Mile.Project.Platform.x64.props" />
+  <Import Sdk="Mile.Project.Configurations" Version="1.0.1622" Project="Mile.Project.Platform.ARM64.props" />
+  <Import Sdk="Mile.Project.Configurations" Version="1.0.1622" Project="Mile.Project.Cpp.Default.props" />
+  <Import Sdk="Mile.Project.Configurations" Version="1.0.1622" Project="Mile.Project.Cpp.props" />
   <ItemDefinitionGroup>
     <Link>
-      <ModuleDefinitionFile>LvglWindows.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(IntDir)LvglWindows.def</ModuleDefinitionFile>
       <AdditionalDependencies>$(OutDir)LvglWindowsStatic.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalDependencies Condition="'$(Configuration)'=='Release'">libcmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <LinkTimeCodeGeneration Condition="'$(Configuration)'=='Release'">Default</LinkTimeCodeGeneration>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="LvglWindows.def" />
+    <None Include="$(IntDir)LvglWindows.def" />
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="LvglWindows.manifest" />
   </ItemGroup>
-  <Import Project="..\Mile.Project.Windows\Mile.Project.Cpp.targets" />
+  <Import Sdk="Mile.Project.Configurations" Version="1.0.1622" Project="Mile.Project.Cpp.targets" />
+  <UsingTask TaskName="Lvgl.Build.Tasks.StaticLibraryExportsDefinitionGenerator" AssemblyFile="$(MSBuildThisFileDirectory)..\LvglPlatform\Lvgl.Build.Tasks.dll" />
+  <Target Name="AddWildCardItems" AfterTargets="BuildGenerateSources">
+    <StaticLibraryExportsDefinitionGenerator
+      InputLibraryFilePath="$(OutDir)LvglWindowsStatic.lib"
+      TargetPlatform="$(PlatformShortName)"
+      OutputExportsDefinitionPath="$(IntDir)LvglWindows.def" />
+  </Target>
 </Project>

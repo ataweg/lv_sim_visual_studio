@@ -1,6 +1,12 @@
-﻿# LVGL for Windows Visual Studio port
+﻿# LVGL for Visual Studio
 
 ![Screenshot](Screenshot.png)
+
+Note: If you want to use the stable version, please use branches with the
+"release/" prefix. The master branch is the current development version which
+may contains some issues like compilation failed and etc. Read
+https://github.com/lvgl/lv_port_pc_visual_studio/issues/101 for the 2025 Roadmap
+of the LVGL Visual Studio repository.
 
 ## Introduction
 
@@ -115,6 +121,11 @@ is launched via a single function call. By default the `lv_demo_widgets`
 function is the one that runs, but you can comment that one out and choose any
 of the others to compile and run.
 
+Demos outside of the default two widgets (`lv_demo_widgets` and `lv_demo_benchmark`)
+can be enabled by editing [lv_conf.h](LvglWindowsSimulator/lv_conf.h) around line 1199
+(DEMO USAGE section) and setting the associated variable to 1 instead of 0 (i.e., 
+`#define LV_USE_DEMO_MUSIC 0` -> `#define LV_USE_DEMO_MUSIC 1`
+
 Use these examples to start building your own application test code inside the
 simulator.
 
@@ -136,3 +147,4 @@ visual studio file changes to guide you.
 
 - [ARM32 Support Removed Notice](Documents/Arm32SupportRemovedNotice.md)
 - [How to synchronize LVGL related submodules](Documents/HowToSynchronizeLvglRelatedSubmodules.md)
+- [Default lv_conf.h Configuration](Documents/DefaultLvglConfigurations.md)

@@ -185,8 +185,8 @@ namespace LvglProjectFileUpdater
 
             foreach (ProjectItemElement Item in FiltersRoot.Items)
             {
-                if (Item.Include.StartsWith(
-                        @"lvgl\") ||
+                if (Item.Include.StartsWith(@"lvgl\") ||
+                    Item.Include == "lvgl" ||
                     Item.Include.StartsWith(
                         @"$(MSBuildThisFileDirectory)..\LvglPlatform\"))
                 {
@@ -216,7 +216,16 @@ namespace LvglProjectFileUpdater
 
             foreach (var CurrentName in NewSourceNames)
             {
-                ProjectRoot.AddItem("ClCompile", CurrentName.Item1);
+                {
+                    ProjectItemElement Item =
+                        ProjectRoot.AddItem("ClCompile", CurrentName.Item1);
+                    Item.AddMetadata(
+                        "AdditionalOptions",
+                        "/utf-8 %(AdditionalOptions)");
+                    Item.AddMetadata(
+                        "LanguageStandard",
+                        "Default");
+                }
 
                 {
                     ProjectItemElement Item =
