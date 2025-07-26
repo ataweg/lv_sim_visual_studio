@@ -454,6 +454,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\misc\cache\class\lv_cache_class.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\misc\cache\class\lv_cache_lru_ll.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\misc\cache\class\lv_cache_lru_rb.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\misc\cache\class\lv_cache_sc_da.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\misc\cache\instance\lv_cache_instance.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\misc\cache\instance\lv_image_cache.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\misc\cache\instance\lv_image_header_cache.h" />
@@ -1068,7 +1069,6 @@
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\docs\src\intro\getting_started\whats_next.rst" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\docs\src\intro\introduction\faq.rst" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\docs\src\intro\introduction\index.rst" />
-    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\docs\src\intro\introduction\key_features.rst" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\docs\src\intro\introduction\license.rst" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\docs\src\intro\introduction\repo.rst" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\docs\src\intro\introduction\requirements.rst" />
@@ -1316,8 +1316,13 @@
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\scripts\built_in_font\FontAwesome5-Solid+Brands+Regular.woff" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\scripts\built_in_font\font_license\DejaVuSans\LICENSE" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\scripts\built_in_font\font_license\FontAwesome5\LICENSE.txt" />
+    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\scripts\built_in_font\font_license\FontAwesome\LICENSE.txt" />
+    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\scripts\built_in_font\font_license\Lato\OFL.txt" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\scripts\built_in_font\font_license\Montserrat\OFL.txt" />
+    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\scripts\built_in_font\font_license\NotoColorEmoji\OFL.txt" />
+    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\scripts\built_in_font\font_license\NotoSansSC\OFL.txt" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\scripts\built_in_font\font_license\SourceHanSansSC\LICENSE.txt" />
+    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\scripts\built_in_font\font_license\UbuntuMedium\UFL.txt" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\scripts\built_in_font\font_license\unscii\unscii.html" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\scripts\built_in_font\generate_all.py" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\scripts\built_in_font\Montserrat-Medium.ttf" />
@@ -1906,6 +1911,8 @@
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs\draw\svg_draw_svg_shapes_10.lp64.png" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs\draw\svg_draw_svg_shapes_11.lp32.png" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs\draw\svg_draw_svg_shapes_11.lp64.png" />
+    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs\draw\svg_draw_svg_shapes_12.lp32.png" />
+    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs\draw\svg_draw_svg_shapes_12.lp64.png" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs\draw\svg_draw_svg_shapes_2.lp32.png" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs\draw\svg_draw_svg_shapes_2.lp64.png" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs\draw\svg_draw_svg_shapes_3.lp32.png" />
@@ -2726,6 +2733,8 @@
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs_vg_lite\draw\svg_draw_svg_shapes_10.lp64.png" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs_vg_lite\draw\svg_draw_svg_shapes_11.lp32.png" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs_vg_lite\draw\svg_draw_svg_shapes_11.lp64.png" />
+    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs_vg_lite\draw\svg_draw_svg_shapes_12.lp32.png" />
+    <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs_vg_lite\draw\svg_draw_svg_shapes_12.lp64.png" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs_vg_lite\draw\svg_draw_svg_shapes_2.lp32.png" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs_vg_lite\draw\svg_draw_svg_shapes_2.lp64.png" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\tests\ref_imgs_vg_lite\draw\svg_draw_svg_shapes_3.lp32.png" />
@@ -5701,14 +5710,6 @@
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\font\lv_font_simsun_14_cjk.c">
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <LanguageStandard>Default</LanguageStandard>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\font\lv_font_simsun_16_cjk.c">
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
-      <LanguageStandard>Default</LanguageStandard>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\font\lv_font_source_han_sans_sc_14_cjk.c">
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>Default</LanguageStandard>
@@ -6122,6 +6123,10 @@
       <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\misc\cache\class\lv_cache_lru_rb.c">
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\misc\cache\class\lv_cache_sc_da.c">
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
