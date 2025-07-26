@@ -276,7 +276,8 @@ int main()
 
    // lv_example_keyboard_1();    // ok
    // lv_example_keyboard_2();    // ok
-      lv_example_keyboard_3();    // ok
+   // lv_example_keyboard_3();    // ok
+      lv_example_keyboard_4();    // ok
 
    // lv_example_label_1();
    // lv_example_label_2();       // ok
